@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/2D Platform - Mountain Top Climb Racing Driving KIT/Scenes/Scene.unity
+  isLoaded: 1
+  isActive: 1
