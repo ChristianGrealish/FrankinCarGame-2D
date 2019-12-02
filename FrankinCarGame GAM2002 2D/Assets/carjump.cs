@@ -18,7 +18,7 @@ public class carjump : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             didPress = true;
         }
