@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class carjump : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class carjump : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (CrossPlatformInputManager.GetButton("Jump"))
         {
             didPress = true;
         }

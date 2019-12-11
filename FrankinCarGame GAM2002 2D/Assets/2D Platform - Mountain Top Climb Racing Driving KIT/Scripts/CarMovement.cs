@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class CarMovement : MonoBehaviour {
 
@@ -39,7 +40,7 @@ public class CarMovement : MonoBehaviour {
 
 			if(slope>=180)
 			slope = slope - 360;
-			dir = Input.GetAxis("Horizontal"); 
+			dir = CrossPlatformInputManager.GetAxis("Horizontal"); 
 
 			if(dir!=0)
 				motorBack.motorSpeed = Mathf.Clamp(motorBack.motorSpeed -(dir*accelerationRate - gravity*Mathf.Sin((slope * Mathf.PI)/180)*80 )*Time.deltaTime, maxFwdSpeed, maxBwdSpeed);
